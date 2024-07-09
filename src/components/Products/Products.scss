@@ -17,6 +17,10 @@
     flex: 4;
     padding: 40px 0;
 
+    @media (max-width: 600px) {
+      padding: 28px 0;
+    }
+
     
     .top{
       display: flex;

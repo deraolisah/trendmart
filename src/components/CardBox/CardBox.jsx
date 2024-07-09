@@ -7,7 +7,7 @@ const CardBox = () => {
     const products = [
         { 
           id: 1,
-          name: 'Dior and Stone Island T-Shirt, Oversized Fit', 
+          name: 'Force Majeure Oversized Fit', 
           price: 70, 
           imageUrl: 'https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 10, 
@@ -16,7 +16,7 @@ const CardBox = () => {
         },
         { 
           id: 2, 
-          name: 'Short-Sleeve Crop Top for Women', 
+          name: 'Lskd.co T-shirt', 
           price: "7,000", 
           imageUrl: 'https://images.unsplash.com/photo-1618453292459-53424b66bb6a?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 10, 
@@ -25,7 +25,7 @@ const CardBox = () => {
         },
         { 
           id: 3, 
-          name: 'Todd Snyder Laidback Linen Shirt for Men', 
+          name: 'Cobbles Classic T-shirt', 
           price: 120, 
           imageUrl: 'https://images.unsplash.com/photo-1564859228273-274232fdb516?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
@@ -74,7 +74,7 @@ const CardBox = () => {
           price: 120, 
           imageUrl: 'https://images.pexels.com/photos/2049315/pexels-photo-2049315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', 
           stock: 5, 
-          discount: false, 
+          discount: true, 
           hot: false 
         },
         { 
@@ -83,7 +83,7 @@ const CardBox = () => {
           price: 120, 
           imageUrl: 'https://via.placeholder.com/150', 
           stock: 5, 
-          discount: false, 
+          discount: true, 
           hot: false 
         },
         { 

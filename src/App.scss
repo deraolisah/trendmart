@@ -62,10 +62,16 @@ html{
       }
       
       hr{
-        width: 100%;
+        display: flex;
+        min-width: 100%;
         height: 0.8px;
         margin: 20px 0;
         background-color: lightgray !important;
+
+        @media (max-width: 600px) {
+          height: 1px;
+          background-color: gray !important;
+        }
       }
     } 
   }

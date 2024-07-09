@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 //   );
 // };
 
-const Cart = () => {
+const Cart = ({ nextStep }) => {
   const [quantity, setQuantity] = useState(2)
   
   
@@ -115,8 +115,8 @@ const Cart = () => {
             <span> Total: </span>
             <span><b> $1230 </b></span>
           </div>
-          <Link to='/checkout'>
-            <CTA text="Proceed to Checkout >" />
+          <Link to='/checkout' >
+            <CTA text="Proceed to Checkout >" onClick={nextStep} />
           </Link>
           <Link to='/'>
             <CTA text="< Continue Shopping" 

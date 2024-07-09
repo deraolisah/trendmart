@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa6";
+import { FaPinterestP } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { BsHeadset } from "react-icons/bs";
@@ -16,7 +16,7 @@ const TopNav = () => {
         <p className='follow'> Follow Us: </p>
         <FaTwitter className='social-icons' />
         <FaFacebook className='social-icons' />
-        <FaYoutube className='social-icons' />
+        <FaPinterestP className='social-icons' />
         <FaInstagram className='social-icons' />
       </div>
       

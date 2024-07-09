@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
 import { PiShoppingCartSimple } from "react-icons/pi";
-import { HiOutlineUser } from "react-icons/hi2";
+import UserToggleButton from '../../components/UserToggleButton/UserToggleButton';
 
 
 import "./Nav.scss";
@@ -40,13 +40,13 @@ const Nav = () => {
             <PiShoppingCartSimple />
             <span>4</span>
           </Link>
-          <div className="nav-icons">
-            <HiOutlineUser />
-          </div>
           <div className="user-name">
+            <UserToggleButton />
+          </div>
+          {/* <div className="user-name">
             <p> Chioma </p>
             <FaAngleDown className="drop-down"/>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
