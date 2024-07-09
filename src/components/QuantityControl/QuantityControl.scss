@@ -29,6 +29,11 @@
       color: white;
       background-color: var(--primary-color);
     }
+
+    @media (max-width: 600px) {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   span {

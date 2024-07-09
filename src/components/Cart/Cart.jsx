@@ -16,50 +16,80 @@ import { Link } from "react-router-dom";
 // };
 
 const Cart = ({ nextStep }) => {
-  const [quantity, setQuantity] = useState(2)
+  const [quantity, setQuantity] = useState(3)
   
   
   const data = [
     {
       id: 1,
       img: "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      title: "Long Sleeve Graphic T-shirt",
+      title: "Dior and Stone Island T-Shirt, Oversized Fit",
       desc: "Lorem ipsum dolor sint",
       isNew: true,
       oldPrice: 19,
-      price: 120,
-      stock: 10,
+      price: 250,
+      stock: 2,
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      title: "Coat",
-      desc: "Lorem sint",
+      img: "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      title: "Dior and Stone Island T-Shirt, Oversized Fit",
+      desc: "Lorem ipsum dolor sint",
       isNew: true,
       oldPrice: 19,
-      price: 12,
+      price: 250,
       stock: 5,
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      title: "Coat",
-      desc: "Lorem sint",
+      img: "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      title: "Dior and Stone Island T-Shirt, Oversized Fit",
+      desc: "Lorem ipsum dolor sint",
       isNew: true,
       oldPrice: 19,
-      price: 12,
+      price: 250,
       stock: 8,
     },
     {
       id: 4,
-      img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      title: "Coat",
-      desc: "Lorem sint",
+      img: "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      title: "Dior and Stone Island T-Shirt, Oversized Fit",
+      desc: "Lorem ipsum dolor sint",
       isNew: true,
       oldPrice: 19,
-      price: 12,
-      stock: 12,
+      price: 250,
+      stock: 10,
     },
+    // {
+    //   id: 2,
+    //   img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    //   title: "Coat",
+    //   desc: "Lorem sint",
+    //   isNew: true,
+    //   oldPrice: 19,
+    //   price: 12,
+    //   stock: 5,
+    // },
+    // {
+    //   id: 3,
+    //   img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    //   title: "Coat",
+    //   desc: "Lorem sint",
+    //   isNew: true,
+    //   oldPrice: 19,
+    //   price: 12,
+    //   stock: 8,
+    // },
+    // {
+    //   id: 4,
+    //   img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    //   title: "Coat",
+    //   desc: "Lorem sint",
+    //   isNew: true,
+    //   oldPrice: 19,
+    //   price: 12,
+    //   stock: 12,
+    // },
   ]
 
   const maxStock = data[1].stock; // Example max stock
@@ -83,10 +113,10 @@ const Cart = ({ nextStep }) => {
             <div className="details">
               <h4>{item.title}</h4>
               <div className="price">
-                ${item.price}
+                <h4><b>${item.price} </b></h4>
               </div>
               <QuantityControl initialQuantity={1} maxQuantity={item.stock} />
-              <h4>${item.price * quantity}</h4>
+              <h4><b>${item.price * quantity}</b></h4>
             </div>
           </div>
         ))}

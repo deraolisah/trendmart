@@ -81,7 +81,7 @@ const CardBox = () => {
           id: 9, 
           name: 'Urban Adventure Henley', 
           price: 120, 
-          imageUrl: 'https://via.placeholder.com/150', 
+          imageUrl: 'https://images.unsplash.com/photo-1699459867100-4ecf9eceb0e5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
           discount: true, 
           hot: false 
@@ -90,7 +90,7 @@ const CardBox = () => {
           id: 10, 
           name: 'Sunset Serenade Sundress for Kids', 
           price: 120, 
-          imageUrl: 'https://via.placeholder.com/150', 
+          imageUrl: 'https://images.unsplash.com/photo-1677131618941-1888022e9ba8?q=80&w=1356&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
           discount: false, 
           hot: false 
@@ -99,7 +99,7 @@ const CardBox = () => {
           id: 11, 
           name: 'Timeless Tailored Trousers', 
           price: 120, 
-          imageUrl: 'https://via.placeholder.com/150', 
+          imageUrl: 'https://images.unsplash.com/photo-1681892012536-49619a370ab9?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
           discount: false, 
           hot: false 
@@ -108,8 +108,8 @@ const CardBox = () => {
           id: 12, 
           name: 'Graceful Glide Midi Skirt', 
           price: 120, 
-          imageUrl: 'https://via.placeholder.com/150', 
-          stock: 5, 
+          imageUrl: 'https://images.unsplash.com/photo-1673448270138-50f51c554ba4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
+          stock: 0, 
           discount: false, 
           hot: false 
         },
