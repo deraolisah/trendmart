@@ -1,0 +1,52 @@
+import React from 'react';
+import './Card.scss';
+import CTA from '../CTA/CTA';
+
+import { MdFavoriteBorder } from "react-icons/md";
+import { PiShoppingCartSimple } from "react-icons/pi";
+import { HiStar } from "react-icons/hi";
+import { Link } from 'react-router-dom';
+
+const Card = ({ product }) => {
+    const { id, name, price, imageUrl, stock, discount, hot } = product;
+
+    return (
+        <Link to={'/product/{id}'} className={`card ${stock === 0 ? 'out-of-stock' : ''} ${discount ? 'discount' : ''} ${hot ? 'hot' : ''}`}>
+            <img className="product-image" src={imageUrl} alt={name} />
+            <div className="product-info">
+                {/* <h2 style={{display = none}}>{id}</h2> */}
+                <span className='stars'>
+                    <HiStar className='star' />
+                    <HiStar className='star' />
+                    <HiStar className='star' />
+                    <HiStar className='star' />
+                </span>
+                <h3 className="product-name">{name}</h3>
+                <p className="product-price">${price}</p>
+                {stock === 0 && <p className="out-of-stock-label">Out of Stock</p>}
+                {discount && <p className="discount-label">25% off🔥</p>}
+                {hot && <p className="hot-label">Hot</p>}
+            </div>
+            <div className='card-options'>
+                <p className='option'>
+                    <MdFavoriteBorder className='hide' />
+                    <Link to='/cart' className='add'>
+                        <CTA className="cta" text="Add to cart" />
+                    </Link>
+                </p>
+                <p className='option option-2'>
+                    <PiShoppingCartSimple className='hide hide-2' />
+                    <Link to='/favorites' className='add add-2'>
+                        <CTA className="cta" text="Add to wishlist" style={{ 
+                            backgroundColor: 'transparent', 
+                            border: '1px solid var(--primary-color)',
+                            color: 'var(--primary-color', }}
+                        />
+                    </Link>
+                </p>
+            </div>
+        </Link>
+    );
+};
+
+export default Card;

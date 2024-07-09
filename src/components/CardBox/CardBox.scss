@@ -1,0 +1,43 @@
+.cardbox{
+  margin-top: 24px;
+
+  
+  .product-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: space-between;
+    
+    
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    h2{
+      flex: 2;
+      text-transform: capitalize;
+    }
+
+    p{
+      flex: 3;
+      color: gray;
+    }
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}

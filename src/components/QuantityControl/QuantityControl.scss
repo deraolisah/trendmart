@@ -1,0 +1,40 @@
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+
+  button {
+    // background-color: #007bff;
+    color: var(--primary-color);
+    background-color: #FFF;
+    border-radius: 50%;
+    border: 0.8px solid var(--primary-color);
+    // padding: 10px 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover {
+      color: white;
+      background-color: var(--primary-color);
+    }
+  }
+
+  span {
+    margin: 0 15px;
+    font-size: 16px;
+    min-width: 30px;
+    text-align: center;
+  }
+}

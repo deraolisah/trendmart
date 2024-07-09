@@ -1,0 +1,147 @@
+.carousel {
+  color: white;
+  width: 100%;
+  height: 400px;
+  // padding: 10px 40px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+
+  @media (max-width: 600px) {
+    // padding: 10px 4.5%;
+    height: 250px;
+  }
+  
+  .carousel-cell {
+    width: 100%;
+    height: 100%;
+
+    img{
+      object-position: center;
+    }
+  }
+
+  // /* Optional: Customize Flickity pagination dots */
+  // .flickity-page-dots {
+  //   bottom: 25px;
+  //   // background: red;
+  // }
+
+  // .flickity-page-dots .dot {
+  //   width: 100px !important;
+  //   height: 10px;
+  //   background: #8C8;
+  //   border-radius: 0 !important;
+  //   // opacity: 0.5;
+  // }
+
+  // .flickity-page-dots .dot.is-selected {
+  //   background: #4CAF50 !important;
+  //   background-color: var(--primary-color) !important;
+  //   opacity: 1;
+  // }
+
+
+
+
+
+  /* Custom Pagination Dots */
+.flickity-page-dots {
+  bottom: 25px; /* Adjust position as needed */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+
+  .dot{
+    // width: 100px !important;
+    // height: 30px !important;
+    // margin: 0 5px;
+    // background: #ccc;
+    // border-radius: 0 !important;
+    // background: red !important;
+    // transition: background 0.3s ease;
+    // cursor: help iport !important;
+
+    &.is-selected {
+      background: #007bff;
+      // background: yellow !important;
+    }
+
+    &:hover {
+      background: #007bff;
+      // background: red !important;
+    }
+  }
+}
+
+
+
+
+
+  
+  
+  
+  
+  /* Override Flickity default button styles */
+  .flickity-button {
+    color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 60px;
+    height: 100%;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      opacity: 1;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+    
+    &.flickity-prev-next-button {
+      border-radius: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    &.previous {
+      background: #FFF;
+      background: linear-gradient(to left, transparent 20%, white);
+      background-size: 100%;
+      
+      left: 0px;
+      &::before {
+        color: white;
+        // content: '◀'; /* Custom icon */
+        content: '«'; /* Custom icon */
+        z-index: 10;
+        font-size: 2rem;
+        // background: red;
+        padding: 20px;
+        border-radius: 50px;
+      }
+    }
+    
+    &.next {
+      background: #FFF;
+      background: linear-gradient(to right, transparent 20%, white);
+      background-size: 100%;
+      
+      right: 0px;
+      &::before {
+        color: white;
+        // content: '▶'; /* Custom icon */
+        content: '»'; /* Custom icon */
+        z-index: 10;
+        font-size: 2rem;
+      }
+    }
+  }
+}
