@@ -13,8 +13,8 @@
     border-radius: 50%;
     border: 0.8px solid var(--primary-color);
     // padding: 10px 15px;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,10 +40,8 @@
   }
 
   span {
-    // margin: 0 15px;
     font-size: 16px;
     min-width: 30px;
     text-align: center;
-    // background: red;
   }
 }
