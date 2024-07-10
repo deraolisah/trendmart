@@ -16,7 +16,7 @@ const Layout = () => {
     <div className="app">
       <TopNav />
       <Nav/>
-      <Outlet/>
+      <Outlet />
       <Footer/>
     </div>
   )
@@ -25,27 +25,27 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path:"/",
-    element:<Layout/>,
+    element:<Layout />,
     children:[
       {
         path:"/",
-        element:<Home/>
+        element:<Home />
       },
       {
         path:"/favorites",
-        element:<FavoritePage/>
+        element:<FavoritePage />
       },
       {
         path:"/cart",
-        element:<CartPage/>
+        element:<CartPage />
       },
       {
         path:"/product/:id",
-        element:<Product/>
+        element:<Product />
       },
       {
         path:"/checkout",
-        element:<CheckoutPage/>
+        element:<CheckoutPage />
       },
     ]
   },
@@ -53,9 +53,7 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
+    <RouterProvider router={router} />
   );
 }
 

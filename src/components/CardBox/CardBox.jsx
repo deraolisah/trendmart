@@ -16,7 +16,7 @@ const CardBox = () => {
         },
         { 
           id: 2, 
-          name: 'Urban Adventure Lskd.co Black T-shirt', 
+          name: 'Baggy Urban Lskd.co Black T-shirt', 
           price: "7,000", 
           imageUrl: 'https://images.unsplash.com/photo-1618453292459-53424b66bb6a?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 10, 

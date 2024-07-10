@@ -28,22 +28,22 @@ const Card = ({ product }) => {
                 {hot && <p className="hot-label">Hot</p>}
             </div>
             <div className='card-options'>
-                <p className='option'>
-                    <MdFavoriteBorder className='hide' />
-                    <Link to='/cart' className='add'>
+                <div className='option'>
+                    <MdFavoriteBorder className='icon' />
+                    <PiShoppingCartSimple className='icon' />
+                </div>
+                <div className='option option-2'>
+                    <Link to='/cart'>
                         <CTA className="cta" text="Add to cart" />
                     </Link>
-                </p>
-                <p className='option option-2'>
-                    <PiShoppingCartSimple className='hide hide-2' />
-                    <Link to='/favorites' className='add add-2'>
+                    <Link to='/favorites'>
                         <CTA className="cta" text="Add to wishlist" style={{ 
                             backgroundColor: 'transparent', 
                             border: '1px solid var(--primary-color)',
                             color: 'var(--primary-color', }}
                         />
                     </Link>
-                </p>
+                </div>
             </div>
         </Link>
     );

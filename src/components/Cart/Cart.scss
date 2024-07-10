@@ -152,6 +152,10 @@
             color: #DD524D;
             font-size: 1.4rem;
             cursor: pointer;
+
+            @media (max-width: 600px) {
+              display: none;
+            }
           }
           
           img{

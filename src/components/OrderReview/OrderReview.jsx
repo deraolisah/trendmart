@@ -12,7 +12,7 @@ const OrderReview = ({ prevStep, submitOrder }) => {
       </div>
 
       <div className='checkout-details'>
-        <div className='form-group' style={{ margin: '20px auto' }}>
+        <div className='form-group' style={{ margin: '20px auto', textAlign: "center", lineHeight: "4rem" }}>
           <h1> All Added Items Will Be Displayed Here </h1>
         </div>
 
