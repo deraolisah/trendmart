@@ -17,10 +17,11 @@
     max-width: 900px;
     margin: 30px auto;
     background-color: white;
-    padding: 20px;
+    // padding: 20px;
     border: 0.8px solid #ccc;
     border-radius: 8px;
     flex: 3;
+    overflow: hidden;
     // display: flex;
     // gap: 20px;
     // -webkit-box-shadow: -3px 3px 7px -5px rgba(0, 0, 0, 0.5);
@@ -35,9 +36,11 @@
     
     .cart-header{
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      padding: 0 0 15px 0;
+      padding: 18px 20px;
       border-bottom: 0.8px solid lightgray;
+
       
       h3{
         color: #1B1818;
@@ -45,7 +48,7 @@
         font-weight: 500;
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: 8px;
         
         span{
           display: flex;
@@ -62,20 +65,36 @@
     }
     
     .cart-subheading{
+      width: 100%;
       background-color: lightgray;
-      display: grid;
+      display: flex;
       align-items: center;
-      grid-template-columns: repeat(4, 1fr);
-      padding: 10px 0;
+      justify-content: space-between;
+      padding: 10px 0px;
       text-align: left;
-
+      
       @media (max-width: 600px) {
         display: none;
       }
 
-
-      h4{
+      .left{
         width: 100%;
+        flex: 1;
+        padding: 0 0px 0 44px;
+        // background: blue;
+      }
+      
+      .right{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        // background: red;
+        
+        h4{
+          width: 100%;
+        }
       }
     }
 
@@ -83,50 +102,110 @@
       display: flex;
       align-items: center;
       gap: 30px;
-      margin: 15px auto;
+      padding: 8.8px 0;
+      border-bottom: 1px solid lightgray;
       
       img{
         width: 80px;
-        height: 100px;
+        // width: 100%;
+        // height: 100px;
+
+        @media (max-width: 600px) {
+          height: 68px !important;
+          // width: 68px;
+        }
       }
       
       
-      .details{
+      .cart-details{
         width: 100%;
-        display: grid;
+        display: flex;
         align-items: center;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 0;
+        justify-content: space-between;
+        // gap: 20px;
+        // background: red;
+        margin-bottom: 4px;
 
         @media (max-width: 600px) {
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          // grid-template-columns: 1fr;
+          // flex-direction: column;
           // align-items: center;
-          // justify-content: center;
+          justify-content: space-between;
           // background: red;
         }
-        
-        h4{
-          font-size: 1.4rem;
-          font-weight: 400;
 
-          b{
-            font-weight: 600;
-          }
-        }
-        p{
-          color: gray;
-          margin-bottom: 10px;
-          font-size: 14px;
-        }
-        
-        .price{
-          // color: #2879fe;
+        .left{
+          width: 100%;
+          flex: 2;
+          // background-color: yellow;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          padding: 0 0 0 20px;
 
           @media (max-width: 600px) {
-            display: none;
+            flex: 2;
+          }
+
+
+          .delete{
+            color: #DD524D;
+            font-size: 1.4rem;
+            cursor: pointer;
+          }
+          
+          img{
+            border-radius: 1px solid lightgray;
+            height: 80px;
+            object-position: top;
+          }
+        }
+        
+        .right{
+          width: 100%;
+          flex: 2;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          // gap: 10px;
+          // padding: 0 20px;
+          text-align: left;
+          // background: red;
+          padding: 0 0px 0 20px;
+
+          @media (max-width: 600px) {
+            flex: 1;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 10px;
+          }
+
+          .col{
+            width: 100% !important;
+            // background: green;
+          }
+
+          h4{
+            font-size: 1.4rem;
+            font-weight: 400;
+            
+            b{
+              font-weight: 600;
+            }
+          }
+          p{
+            color: gray;
+            margin-bottom: 10px;
+            font-size: 14px;
+          }
+          
+          .price{
+            // color: #2879fe;
+            
+            @media (max-width: 600px) {
+              display: none;
+            }
           }
         }
       }

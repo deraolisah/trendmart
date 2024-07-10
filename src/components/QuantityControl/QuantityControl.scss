@@ -1,8 +1,10 @@
 .quantity {
+  width: fit-content;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 10px 0;
+  margin-left: -6px;
 
   button {
     // background-color: #007bff;
@@ -11,17 +13,18 @@
     border-radius: 50%;
     border: 0.8px solid var(--primary-color);
     // padding: 10px 15px;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    // background: red;
 
     &:disabled {
-      background-color: #ccc;
+      background-color: #ddd;
       cursor: not-allowed;
     }
 
@@ -37,9 +40,10 @@
   }
 
   span {
-    margin: 0 15px;
+    // margin: 0 15px;
     font-size: 16px;
     min-width: 30px;
     text-align: center;
+    // background: red;
   }
 }

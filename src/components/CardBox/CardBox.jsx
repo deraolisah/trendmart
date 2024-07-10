@@ -7,7 +7,7 @@ const CardBox = () => {
     const products = [
         { 
           id: 1,
-          name: 'Force Majeure Oversized Fit', 
+          name: 'Force Majeure Oversized Unisex Fit', 
           price: 70, 
           imageUrl: 'https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 10, 
@@ -16,7 +16,7 @@ const CardBox = () => {
         },
         { 
           id: 2, 
-          name: 'Lskd.co T-shirt', 
+          name: 'Urban Adventure Lskd.co Black T-shirt', 
           price: "7,000", 
           imageUrl: 'https://images.unsplash.com/photo-1618453292459-53424b66bb6a?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 10, 
@@ -25,7 +25,7 @@ const CardBox = () => {
         },
         { 
           id: 3, 
-          name: 'Cobbles Classic T-shirt', 
+          name: 'Cobbles Classic Off-White T-shirt', 
           price: 120, 
           imageUrl: 'https://images.unsplash.com/photo-1564859228273-274232fdb516?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
@@ -79,7 +79,7 @@ const CardBox = () => {
         },
         { 
           id: 9, 
-          name: 'Urban Adventure Henley', 
+          name: 'Urban Adventure Henley White Top', 
           price: 120, 
           imageUrl: 'https://images.unsplash.com/photo-1699459867100-4ecf9eceb0e5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
@@ -97,7 +97,7 @@ const CardBox = () => {
         },
         { 
           id: 11, 
-          name: 'Timeless Tailored Trousers', 
+          name: 'Timeless Tailored Shirt and Trousers', 
           price: 120, 
           imageUrl: 'https://images.unsplash.com/photo-1681892012536-49619a370ab9?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
@@ -106,7 +106,7 @@ const CardBox = () => {
         },
         { 
           id: 12, 
-          name: 'Graceful Glide Midi Skirt', 
+          name: 'Graceful Glide Midi Brown Jacket', 
           price: 120, 
           imageUrl: 'https://images.unsplash.com/photo-1673448270138-50f51c554ba4?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 0, 

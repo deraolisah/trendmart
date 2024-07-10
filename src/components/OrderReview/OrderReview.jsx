@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CTA from '../CTA/CTA';
+import Cart from "../Cart/Cart";
 
 const OrderReview = ({ prevStep, submitOrder }) => {
   return (
@@ -11,21 +12,24 @@ const OrderReview = ({ prevStep, submitOrder }) => {
       </div>
 
       <div className='checkout-details'>
-      {/* Order review details */}
-      <div className='buttons'>
-        <Link onClick={prevStep}>
-          <CTA text="Back" style={{
-            backgroundColor: "transparent",
-            border: "1px solid var(--primary-color)",
-            color: "var(--primary-color)",
-          }}/>
-        </Link>
-    
-        <Link onClick={submitOrder}>
-          <CTA text="Place order" />
-        </Link>
-      </div>
+        <div className='form-group' style={{ margin: '20px auto' }}>
+          <h1> All Added Items Will Be Displayed Here </h1>
         </div>
+
+        <div className='buttons'>
+          <Link onClick={prevStep}>
+            <CTA text="Back" style={{
+              backgroundColor: "transparent",
+              border: "1px solid var(--primary-color)",
+              color: "var(--primary-color)",
+            }}/>
+          </Link>
+      
+          <Link onClick={submitOrder}>
+            <CTA text="Place order" />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 };

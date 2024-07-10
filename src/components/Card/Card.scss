@@ -156,6 +156,11 @@
       text-align: left;
       margin-bottom: 8px;
       line-height: 2rem;
+
+      @media (max-width: 600px) {
+        font-size: 1.28rem;
+        margin-bottom: 0px;
+      }
     }
       
     .product-price {
@@ -163,6 +168,10 @@
       font-weight: 500;
       // font-family: var(--poppins);
       color: var(--primary-color);
+
+      @media (max-width) {
+        font-size: 1.28rem;
+      }
     }
   }
     
