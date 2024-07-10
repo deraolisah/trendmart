@@ -7,14 +7,11 @@ A Scalable Single-Seller E-commerce Platform showcasing products and checkout ex
 - [Demo](#demo)
 - [Getting Started](#getting-started)
 - [Dependencies](#dependencies)
-- and
 - [Features](#features)
 
 
 ### Demo
-Currently available to preview:
-https://trendmart-store.netlify.app/
-
+Currently available to preview: https://trendmart-store.netlify.app/
  
 
 ### Getting Started
