@@ -11,20 +11,20 @@ A Scalable Single-Seller E-commerce Platform showcasing products and checkout ex
 - [Features](#features)
 
 
-## Demo
+### Demo
 Currently available to preview:
 https://trendmart-store.netlify.app/
 
  
 
-## Getting Started
-1. Download the [latest version](https://github.com/mrmarkfrench/country-select-js/archive/master.zip)
+### Getting Started
+1. Download the [latest version](https://github.com/deraolisah/trendmart.git)
 2. Unzip the file.
 3. Open the index.html file in your browser.
 4. Enjoy!
 
 
-## Dependencies
+### Dependencies
 > This project makes use of a few dependencies!
 - flickity
 - react-icons
@@ -32,7 +32,7 @@ https://trendmart-store.netlify.app/
 - vite/reactjs
 
 
-## Features
+### Features
 * HNG11 Stage 2 Frontend Task.
 * Built with ReactJs and SCSS.
 * Responsive Design on all screens. ✅
