@@ -6,6 +6,13 @@ Currently available to preview:
 https://trendmart-store.netlify.app/
 
 
+# This project makes use of a few dependencies!
+- flickity
+- react-icons
+- react-router-dom
+- vite/reactjs
+
+# Features
 - HNG11 Stage 2 Frontend Task.
 - Built with ReactJs and SCSS.
 - Responsive Design on all screens. ✅
