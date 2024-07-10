@@ -12,8 +12,10 @@ const OrderReview = ({ prevStep, submitOrder }) => {
       </div>
 
       <div className='checkout-details'>
-        <div className='form-group' style={{ margin: '20px auto', textAlign: "center", lineHeight: "4rem" }}>
+        <div className='form-group' style={{ margin: '20px auto', textAlign: "center", lineHeight: "4rem", }}>
           <h1> All Added Items Will Be Displayed Here </h1>
+          <p> My Laptop is already low, so I might not be able to finish up with my final touches before the review of my work. </p>
+          😓😓😓😫😭 :(
         </div>
 
         <div className='buttons'>

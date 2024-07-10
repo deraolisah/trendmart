@@ -20,14 +20,15 @@
 }
 
 :root{
-  // Fonts
+  // Custom Fonts 
   --flavor-font: "Flavors", cursive;
   --montserrat: "Montserrat", sans-serif;
   --poppins: "Poppins", sans-serif;
-  // Colors
+  // Custom Colors
   --primary-color: #6A1B9A;
   --stars-color: #D5B300;
 }
+
 html{
   font-size: 62.5%;
   
@@ -77,5 +78,3 @@ html{
     } 
   }
 }
-
-

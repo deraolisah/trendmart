@@ -1,5 +1,11 @@
 import React from 'react';
 import "./Footer.scss";
+
+import { FaTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 import { Link } from 'react-router-dom';
 import CTA from '../CTA/CTA';
 import appstore from '../../../public/app.png';
@@ -29,6 +35,12 @@ const Footer = () => {
           <p><a> Women </a></p>
           <p><a> Kids </a></p>
           <p> Follow us: </p>
+          <p>
+            <FaTwitter className='social-icons' />
+            <FaFacebook className='social-icons' />
+            <FaPinterestP className='social-icons' />
+            <FaInstagram className='social-icons' /> 
+          </p>
         </div>
 
         <div className='col'>

@@ -23,8 +23,10 @@ const ShippingInfo = ({ prevStep, nextStep }) => {
           {/* <span> Contact Information </span> */}
       
           <div className='form-group'>
-            <label> Full Name </label>
-            <input type='text' placeholder='Enter Full Name'/>
+            <div className='col'>
+              <label> Full Name </label>
+              <input type='text' placeholder='Enter Full Name'/>
+              </div>
           </div>
 
           <div className='form-group flex'>

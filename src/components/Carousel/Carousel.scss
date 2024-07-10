@@ -2,7 +2,6 @@
   color: white;
   width: 100%;
   height: 400px;
-  // padding: 10px 40px;
   background-color: #FFFFFF;
   overflow: hidden;
   position: relative;
@@ -10,6 +9,10 @@
   @media (max-width: 600px) {
     // padding: 10px 4.5%;
     height: 250px;
+  }
+
+  @media (max-width: 480px) {
+    height: 180px;
   }
   
   .carousel-cell {
@@ -20,27 +23,6 @@
       object-position: center;
     }
   }
-
-  // /* Optional: Customize Flickity pagination dots */
-  // .flickity-page-dots {
-  //   bottom: 25px;
-  //   // background: red;
-  // }
-
-  // .flickity-page-dots .dot {
-  //   width: 100px !important;
-  //   height: 10px;
-  //   background: #8C8;
-  //   border-radius: 0 !important;
-  //   // opacity: 0.5;
-  // }
-
-  // .flickity-page-dots .dot.is-selected {
-  //   background: #4CAF50 !important;
-  //   background-color: var(--primary-color) !important;
-  //   opacity: 1;
-  // }
-
 
 
 
@@ -54,14 +36,7 @@
   justify-content: center;
 
   .dot{
-    // width: 100px !important;
-    // height: 30px !important;
-    // margin: 0 5px;
-    // background: #ccc;
-    // border-radius: 0 !important;
-    // background: red !important;
-    // transition: background 0.3s ease;
-    // cursor: help iport !important;
+    width: 100px !important;
 
     &.is-selected {
       background: #007bff;
@@ -78,11 +53,6 @@
 
 
 
-
-  
-  
-  
-  
   /* Override Flickity default button styles */
   .flickity-button {
     color: transparent;
@@ -117,8 +87,11 @@
     
     &.previous {
       background: #FFF;
-      // background: linear-gradient(to left, transparent 20%, white);
       background-size: 100%;
+      
+      @media (max-width: 600px) {
+        background: linear-gradient(to left, transparent 10%, white);        
+      }
       
       left: 0px;
       &::before {
@@ -127,6 +100,10 @@
         content: '«'; /* Custom icon */
         z-index: 10;
         font-size: 2rem;
+        
+        @media (max-width: 600px) {
+          color: white;
+        }
       }
     }
     
@@ -135,6 +112,10 @@
       // background: linear-gradient(to right, transparent 20%, white);
       background-size: 100%;
       
+      @media (max-width: 600px) {
+        background: linear-gradient(to right, transparent 10%, white);        
+      }
+
       right: 0px;
       &::before {
         color: var(--primary-color);
@@ -142,6 +123,10 @@
         content: '»'; /* Custom icon */
         z-index: 10;
         font-size: 2rem;
+
+        @media (max-width: 600px) {
+          color: white;
+        }
       }
     }
   }

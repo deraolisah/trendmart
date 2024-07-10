@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom"; 
-
-import { FaAngleDown } from "react-icons/fa";
-import { MdFavoriteBorder } from "react-icons/md";
-import { PiShoppingCartSimple } from "react-icons/pi";
-import UserToggleButton from '../../components/UserToggleButton/UserToggleButton';
-
 
 import "./Nav.scss";
 
+import { MdFavoriteBorder } from "react-icons/md";
+import { PiShoppingCartSimple } from "react-icons/pi";
+
+import AccountDropdown from "../AccountDropdown/AccountDropdown";
+
+
 const Nav = () => {
-  const [open, setOpen] = useState(false);
   
   return (
     <div className="nav">
@@ -24,14 +23,6 @@ const Nav = () => {
       </label>
 
       <div className="right">
-        {/* <div className="country">
-          <img src={flag} />
-          NGN
-          <div className="nav-icons drop-down">
-            <FaAngleDown />
-          </div>
-        </div> */}
-
         <div className="nav-options">
           <Link to='/favorites' className="nav-icons icon">
             <MdFavoriteBorder />
@@ -41,12 +32,8 @@ const Nav = () => {
             <span>4</span>
           </Link>
           <div className="user-name">
-            <UserToggleButton />
+            <AccountDropdown />
           </div>
-          {/* <div className="user-name">
-            <p> Chioma </p>
-            <FaAngleDown className="drop-down"/>
-          </div> */}
         </div>
       </div>
     </div>

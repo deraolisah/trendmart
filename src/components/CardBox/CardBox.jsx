@@ -34,7 +34,7 @@ const CardBox = () => {
         },
         { 
           id: 4, 
-          name: 'Todd Snyder Laidback Linen Shirt for Women', 
+          name: 'Chance Encounter Silky-Brown Hoodie', 
           price: 120, 
           imageUrl: 'https://images.unsplash.com/photo-1508853363419-a9263d752c59?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 
@@ -43,7 +43,7 @@ const CardBox = () => {
         },
         { 
           id: 5, 
-          name: 'Executive Elegance Dotted T-Shirt', 
+          name: 'Todd Snyder Laidback Linen Shirt for Women', 
           price: 120, 
           imageUrl: 'https://images.pexels.com/photos/833169/pexels-photo-833169.jpeg', 
           stock: 0, 
@@ -61,7 +61,7 @@ const CardBox = () => {
         },
         { 
           id: 7, 
-          name: 'Silken Dreams Chiffon Top', 
+          name: 'Silken Dreams Chiffon Top - Open Back', 
           price: 120, 
           imageUrl: 'https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg', 
           stock: 5, 
