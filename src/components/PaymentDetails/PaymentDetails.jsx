@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./PaymentDetails.scss";
+import { CiSquareChevLeft } from "react-icons/ci";
 import CTA from "../CTA/CTA";
 import mastercard from "../../../public/mastercard.png";
 import visa from "../../../public/visa.png";
@@ -11,19 +12,42 @@ const PaymentDetails = ({ prevStep, nextStep }) => {
   return (
     <div className="checkout-step">
       <div className="checkout-header">
+      <pre>
+          <Link onClick={prevStep}>
+            <CiSquareChevLeft />
+          </Link>
+        </pre>
         <h2> Payment Information </h2>
         <p> Step 2 of 3 </p>
       </div>
 
       <div className="checkout-details">
-        <div className="form-group">
-          <div className="images">
-            <img src={mastercard} />
-            <img src={visa} />
-            <img src={paypal} />
-            <img src={amazon} />
+        <form>
+          <div className="form-group">
+            <div className="images">
+              <div>
+                <img src={mastercard} />
+                <p> Master Card </p>
+                <input type="radio" />
+              </div>
+              <div>
+                <img src={visa} />
+                <p> Visa Card </p>
+                <input type="radio" />
+              </div>
+              <div>
+                <img src={paypal} />
+                <p> Paypal </p>
+                <input type="radio" />
+              </div>
+              <div>
+                <img src={amazon} />
+                <p> Amazon Pay </p>
+                <input type="radio" />
+              </div>
+            </div>
           </div>
-        </div>
+        </form>
 
         <div className="buttons">
           <Link onClick={prevStep}>

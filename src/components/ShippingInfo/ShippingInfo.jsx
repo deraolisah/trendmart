@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { CiSquareChevLeft } from "react-icons/ci";
 import CTA from '../CTA/CTA';
+import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
 
 const ShippingInfo = ({ prevStep, nextStep }) => {
+
+  const [country, setCountry] = useState('');
+  const [region, setRegion] = useState('');
+
   return (
     <div className="checkout-step">
       <div className='checkout-header'>
+        <pre>
+          <Link to="/cart" onClick={prevStep}>
+            <CiSquareChevLeft />
+          </Link>
+        </pre>
         <h2> Shipping Information </h2>
         <p> Step 1 of 3 </p>
       </div>
@@ -13,15 +24,28 @@ const ShippingInfo = ({ prevStep, nextStep }) => {
       <div className='checkout-details'>
         <form>
           <div className='form-group'>
-            <h3> Country/Region </h3>
-          
-            <input type='text' placeholder='Nigeria'/>
+            <div className='col'>
+              <h3> Country/Region </h3>
+              <CountryDropdown
+              value={country}
+              onChange={(val) => setCountry(val)} 
+              style={{
+                width: "100%",
+                maxWidth: "420px",
+                fontSize: "1.4rem",
+                minHeight: "40px !important",
+                borderRadius: "10px",
+                border: "1px solid lightgray",
+                padding: "10px 10px",
+              }}
+              tabIndex={1000}
+              />
+            </div>
           </div>
 
-          <hr/>
+          {/* <hr/> */}
 
-          {/* <span> Contact Information </span> */}
-      
+          <span> Contact Information </span>      
           <div className='form-group'>
             <div className='col'>
               <label> Full Name </label>
@@ -41,10 +65,9 @@ const ShippingInfo = ({ prevStep, nextStep }) => {
             </div>
           </div>
 
-          <hr/>
+          {/* <hr/> */}
 
-          {/* <span> address </span> */}
-          
+          <span> address information </span>          
           <div className='form-group flex'>
             <div className='col'>
               <label> Address </label>
@@ -53,7 +76,19 @@ const ShippingInfo = ({ prevStep, nextStep }) => {
             
             <div className='col'>
               <label> State </label>
-              <input type='text' placeholder='Select state' />
+              <RegionDropdown
+              country={country}
+              value={region}
+              onChange={(val) => setRegion(val)}
+              style={{
+                width: "100%",
+                minHeight: "40px !important",
+                border: "1px solid lightgray",
+                borderRadius: "10px",
+                padding: "10px",
+              }}
+
+              />
             </div>
           </div>
           
@@ -75,9 +110,9 @@ const ShippingInfo = ({ prevStep, nextStep }) => {
           </div>
 
 
-          <hr/>
+          {/* <hr/> */}
 
-          {/* <span> Additional Information </span> */}
+          <span> Additional Information </span>
           <div className='form-group'>
 
             <label> Additional Information (Optional) </label>
