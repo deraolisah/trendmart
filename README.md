@@ -5,12 +5,15 @@ A Scalable Single-Seller E-commerce Platform showcasing products and checkout ex
 Currently available to preview:
 https://trendmart-store.netlify.app/
 
+& 
 
 > This project makes use of a few dependencies!
 - flickity
 - react-icons
 - react-router-dom
 - vite/reactjs
+
+&
 
 > Features
 - HNG11 Stage 2 Frontend Task.
