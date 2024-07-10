@@ -25,26 +25,26 @@ const PaymentDetails = ({ prevStep, nextStep }) => {
         <form>
           <div className="form-group">
             <div className="images">
-              <div>
+              <label htmlFor="mastercard">
                 <img src={mastercard} />
                 <p> Master Card </p>
-                <input type="radio" />
-              </div>
-              <div>
+                <input id="mastercard" type="radio" />
+              </label>
+              <label htmlFor="visa">
                 <img src={visa} />
                 <p> Visa Card </p>
-                <input type="radio" />
-              </div>
-              <div>
+                <input id="visa" type="radio" />
+              </label>
+              <label htmlFor="paypal">
                 <img src={paypal} />
                 <p> Paypal </p>
-                <input type="radio" />
-              </div>
-              <div>
+                <input id="paypal" type="radio" />
+              </label>
+              <label htmlFor="amazon">
                 <img src={amazon} />
                 <p> Amazon Pay </p>
-                <input type="radio" />
-              </div>
+                <input id="amazon" type="radio" />
+              </label>
             </div>
           </div>
         </form>
