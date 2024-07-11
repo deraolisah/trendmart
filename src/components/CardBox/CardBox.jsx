@@ -17,7 +17,8 @@ const CardBox = () => {
         { 
           id: 2, 
           name: 'Baggy Urban Lskd.co Black T-shirt', 
-          price: "7,000", 
+          oldPrice: 700,
+          price: 725, 
           imageUrl: 'https://images.unsplash.com/photo-1618453292459-53424b66bb6a?q=80&w=1364&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 10, 
           discount: true, 
@@ -80,6 +81,7 @@ const CardBox = () => {
         { 
           id: 9, 
           name: 'Urban Adventure Henley White Top', 
+          oldPrice: 90,
           price: 120, 
           imageUrl: 'https://images.unsplash.com/photo-1699459867100-4ecf9eceb0e5?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 
           stock: 5, 

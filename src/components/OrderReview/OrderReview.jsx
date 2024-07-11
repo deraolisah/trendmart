@@ -56,7 +56,10 @@ const OrderReview = ({ prevStep, submitOrder }) => {
           </Link>
       
           <Link onClick={submitOrder}>
-            <CTA className="cta" text="Place order" />
+            <CTA text="Place order" style={{
+              padding: "10px 25px",
+              border: "1px solid var(--primary-color)",
+            }} />
           </Link>
         </div>
       </div>

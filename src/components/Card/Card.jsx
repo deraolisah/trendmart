@@ -8,7 +8,7 @@ import { HiStar } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 
 const Card = ({ product }) => {
-    const { id, name, price, imageUrl, stock, discount, hot } = product;
+    const { id, name, oldPrice, price, imageUrl, stock, discount, hot } = product;
 
     return (
         <Link to={'/product/{id}'} className={`card ${stock === 0 ? 'out-of-stock' : ''} ${discount ? 'discount' : ''} ${hot ? 'hot' : ''}`}>
@@ -22,7 +22,10 @@ const Card = ({ product }) => {
                     <HiStar className='star' />
                 </span>
                 <h3 className="product-name">{name}</h3>
-                <p className="product-price">${price}</p>
+                <div className='prices'>
+                    <p className="product-old-price">${oldPrice}</p>
+                    <p className="product-price">${price}</p>
+                </div>
                 {stock === 0 && <p className="out-of-stock-label">Out of Stock</p>}
                 {discount && <p className="discount-label">25% off🔥</p>}
                 {hot && <p className="hot-label">Hot</p>}

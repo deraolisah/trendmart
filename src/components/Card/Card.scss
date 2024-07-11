@@ -164,14 +164,23 @@
       }
     }
       
-    .product-price {
-      font-size: 1.4rem;
-      font-weight: 500;
-      // font-family: var(--poppins);
-      color: var(--primary-color);
+    .prices{
+      display: flex;
+      gap: 8px;
 
-      @media (max-width) {
-        font-size: 1.28rem;
+      .product-old-price{
+        text-decoration: 1px solid gray line-through;
+      }
+
+      .product-price{
+        font-size: 1.4rem;
+        font-weight: 500;
+        // font-family: var(--poppins);
+        color: var(--primary-color);
+        
+        @media (max-width) {
+          font-size: 1.28rem;
+        }
       }
     }
   }
