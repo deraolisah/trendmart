@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { HiOutlineUser } from "react-icons/hi2";
 import { FaAngleDown } from "react-icons/fa";
 import { CiSettings } from "react-icons/ci";
-import { RiAccountCircleFill } from "react-icons/ri";
-import { CiLogout } from "react-icons/ci";
+import { MdLocationPin } from "react-icons/md";
+import { BsHeadset } from "react-icons/bs";
+import { PiWarningCircleBold } from "react-icons/pi";
 import './AccountDropdown.scss';
 
 const AccountDropdown = () => {
@@ -41,9 +42,11 @@ const AccountDropdown = () => {
         <div className="dropdown-content">
           {/* Dropdown content here */}
           <ul>
-            <li> <CiSettings className='icon' /> Account Settings</li>
-            <li> <RiAccountCircleFill className="icon" /> Profile</li>
-            <li> <CiLogout />  Logout</li>
+            <li className='hide' style={{color: "var(--primary-color)"}}> Chioma Oluremi </li>
+            <li className='hide'> <MdLocationPin className="icon" /> Track Order </li>
+            <li className='hide'> <BsHeadset className="icon" /> Customer Support </li>
+            <li className='hide'> <PiWarningCircleBold className="icon" /> Need Help ? </li>
+            <li> <CiSettings className='icon' /> Account Settings </li>
           </ul>
         </div>
       )}

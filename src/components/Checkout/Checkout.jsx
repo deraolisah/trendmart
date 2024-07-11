@@ -3,7 +3,7 @@ import ShippingInfo from '../../components/ShippingInfo/ShippingInfo';
 import PaymentDetails from '../../components/PaymentDetails/PaymentDetails';
 import OrderReview from '../../components/OrderReview/OrderReview';
 import './Checkout.scss';
-import Cart from '../Cart/Cart';
+// import Cart from '../Cart/Cart';
 
 const Checkout = () => {
   const [currentStep, setCurrentStep] = useState(1);
