@@ -5,17 +5,12 @@
   .product-list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-<<<<<<< HEAD
+
     gap: 16px;
     justify-content: space-between;
     
     @media (max-width: 1200px) {
-=======
-    gap: 20px;
-    justify-content: space-between;
-    
-    @media (max-width: 900px) {
->>>>>>> origin/main
+
       grid-template-columns: repeat(3, 1fr); 
       gap: 15px;
     }

@@ -1,12 +1,7 @@
 import React from 'react';
-
 import Carousel from "../../components/Carousel/Carousel";
 import Products from "../../components/Products/Products";
 import Pagination from '../../components/Pagination/Pagination';
-<<<<<<< HEAD
-=======
-// import ProductsPage from '../../components/ProductsPage/ProductsPage';
->>>>>>> origin/main
 
 const Home = () => {
   return (
