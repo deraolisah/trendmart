@@ -92,7 +92,7 @@
     }
     
     &.previous {
-      background: #FFF;
+      background: transparent;
       background-size: 100%;
       
       @media (max-width: 600px) {
@@ -114,7 +114,7 @@
     }
     
     &.next {
-      background: #FFF;
+      background: transparent;
       // background: linear-gradient(to right, transparent 20%, white);
       background-size: 100%;
       
