@@ -1,0 +1,60 @@
+.hero{
+  color: white;
+  width: 100%;
+  height: 400px;
+  background-color: #FFFFFF;
+
+  // height: calc(100vh - 80px);
+  position: relative;
+  overflow: hidden !important;
+
+  .container{
+    width: 300vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+
+    img{
+      width: 100vw;
+      margin: 0 auto;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+
+  .icons{
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+
+    @media (max-width: 600px) {
+      padding: 0;
+      width: calc(100% + 20px);
+      margin-left: -10px;
+    }
+
+    .icon{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      color: #999;
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+}

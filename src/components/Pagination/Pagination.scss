@@ -1,0 +1,75 @@
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px auto 68px;
+  padding: 0 4.5%;
+  flex-wrap: wrap;
+
+  @media (max-width:600px) {
+    flex-direction: column-reverse;
+  }
+
+  div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .page-title{
+    font-size: 1.4rem;
+    color: black;
+    // margin-right: 15px;
+  }
+
+  .page-no{
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    color: #717171;
+    cursor: pointer;
+    
+    @media (max-width: 600px) {
+      width: 34px;
+      height: 34px;
+      border-radius: 6.8px;
+    }
+
+    &:hover{
+      // color: white;
+      // background: linear-gradient(-45deg, var(--primary-color), #b146f3,);
+      border-color: var(--primary-color);
+    }
+
+    b{
+      font-weight: 600;
+    }
+  }
+
+  .hide{
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .active{
+    color: white;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    background: linear-gradient(-45deg, var(--primary-color) 25%, #b146f3);
+  }
+
+
+  .prev-btn,
+  .next-btn{
+    border-color: #b146f3;
+  }
+
+}

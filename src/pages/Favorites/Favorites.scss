@@ -1,0 +1,130 @@
+.favorites-container {
+  // max-width: 1200px;
+  padding: 20px 40px;
+
+  .favorites-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .wishlist-count {
+      color: var(--text-gray);
+    }
+  }
+
+  .empty-wishlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+
+    img {
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 500px;
+      color: var(--text-gray);
+      margin-bottom: 20px;
+    }
+  }
+
+  .wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    // background: red;
+
+    .wishlist-item {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .wishlist-item-image {
+        position: relative;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+        }
+
+        .remove-from-wishlist {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border: none;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          svg {
+            color: var(--primary-color);
+            font-size: 20px;
+          }
+
+          &:hover {
+            background-color: var(--primary-color);
+            
+            svg {
+              color: white;
+            }
+          }
+        }
+      }
+
+      .wishlist-item-details {
+        padding: 15px;
+
+        h4 {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+
+        .wishlist-item-pricing {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .old-price {
+            text-decoration: line-through;
+            color: var(--text-gray);
+            font-size: 14px;
+          }
+
+          .current-price {
+            color: var(--primary-color);
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

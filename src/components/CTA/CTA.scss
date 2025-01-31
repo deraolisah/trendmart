@@ -1,0 +1,21 @@
+.cta{
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.28rem;
+  font-weight: 400;
+  letter-spacing: .02em;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    opacity: 0.8;
+  }
+}
