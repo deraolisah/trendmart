@@ -22,6 +22,7 @@ const Carousel = () => {
       freeScroll: false,
       pageDots: true,
       autoPlay: 3500,
+
       prevNextButtons: true,
     });
 

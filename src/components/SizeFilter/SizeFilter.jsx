@@ -19,7 +19,11 @@ const SizeFilter = () => {
 
   return (
     <div className="size-filter">
+<<<<<<< HEAD
       <h3> Size </h3>
+=======
+      <h2> Size </h2>
+>>>>>>> origin/main
       <form>
         {sizes.map((size) => (
           <div key={size} className="size-option">

@@ -19,7 +19,11 @@ const PriceRangeFilter = () => {
 
   return (
     <div className="price-range-filter">
+<<<<<<< HEAD
       <h3> Price Range </h3>
+=======
+      <h2> Price Range </h2>
+>>>>>>> origin/main
       <div className="priceItem">
         <input
           type="range"

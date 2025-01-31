@@ -18,7 +18,11 @@ const SortByFilter = () => {
 
   return (
     <div className="sort-by-filter">
+<<<<<<< HEAD
       <h3> Sort By </h3>
+=======
+      <h2> Sort By </h2>
+>>>>>>> origin/main
       <form>
         {sortByOptions.map((sortByOption) => (
           <div key={sortByOption} className="sort-option">

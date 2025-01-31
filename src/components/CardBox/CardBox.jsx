@@ -18,6 +18,7 @@ const CardBox = () => {
       </div>
     </div>
   );
+
 };
 
 export default CardBox;

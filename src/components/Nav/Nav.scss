@@ -36,6 +36,7 @@
     color: #FFFFFF;
 
     font-family: $flavor-font;
+
     font-size: 2.4rem;
     font-style: normal;
     font-weight: 400;
@@ -126,11 +127,13 @@
           pointer-events: none;
           font-size: 0.88rem;
           font-weight: 400;
+
           width: 20px;
           border-radius: 50%;
           height: 20px;
           background-color: #2879fe;
           background-color: #F84F31;
+
           color: white;
           position: absolute;
           top: -10px;

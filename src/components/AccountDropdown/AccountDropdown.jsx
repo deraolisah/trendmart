@@ -17,6 +17,7 @@ const AccountDropdown = () => {
   // Use the AuthContext
   const { currentUser, logout } = useAuth();
 
+
   // Function to handle click outside dropdown
   const handleClickOutside = (event) => {
     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -25,7 +26,9 @@ const AccountDropdown = () => {
   };
 
   useEffect(() => {
+
     document.addEventListener('mousedown', handleClickOutside);
+
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
@@ -68,10 +71,26 @@ const AccountDropdown = () => {
             <li className='hide' style={{color: "var(--primary-color)"}}> 
               {currentUser.email} 
             </li>
+
+
+      {/* <button className="user-icon" onClick={() => setIsOpen(!isOpen)}>
+        <div className='nav-icon'>
+          <HiOutlineUser />
+        </div>
+        <p className='user-name'> Chioma </p>
+        <FaAngleDown className="drop-down"/>
+      </button>
+
+      {isOpen && (
+        <div className="dropdown-content">
+          {/* Dropdown content here */}
+          {/* <ul>s
+            <li className='hide' style={{color: "var(--primary-color)"}}> Chioma Oluremi </li>
+
             <li className='hide'> <MdLocationPin className="icon" /> Track Order </li>
             <li className='hide'> <BsHeadset className="icon" /> Customer Support </li>
             <li className='hide'> <PiWarningCircleBold className="icon" /> Need Help ? </li>
-            <li> <CiSettings className='icon' /> Account Settings </li>
+            <li> <CiSettings className='icon' /> Account Settings </li>  */}
             <li onClick={handleLogout}> Logout </li>
           </ul>
         </div>

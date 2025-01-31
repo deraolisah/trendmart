@@ -20,6 +20,7 @@ const ColorFilter = () => {
   return (
     <div className="color-filter">
       <h3> Color </h3>
+
       <form>
         {colors.map((color) => (
           <div key={color} className="color-option">

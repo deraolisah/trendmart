@@ -1,6 +1,10 @@
 import React from 'react';
 import "./List.scss";
+<<<<<<< HEAD
 import Card from "../ProductCard/ProductCard.jsx";
+=======
+import Card from "../Card/Card.jsx";
+>>>>>>> origin/main
 
 const List = () => {
 

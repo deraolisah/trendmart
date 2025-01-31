@@ -7,6 +7,7 @@ const CTA = ({ text, style, onClick }) => {
       {text}
     </div>
   );
+
 }
 
 export default CTA;

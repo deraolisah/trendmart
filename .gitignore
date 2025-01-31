@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 .env
 notes.md
 
+=======
+>>>>>>> origin/main
 # Logs
 logs
 *.log
@@ -10,8 +13,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+<<<<<<< HEAD
 node_modules/
 dist/
+=======
+node_modules
+dist
+>>>>>>> origin/main
 dist-ssr
 *.local
 

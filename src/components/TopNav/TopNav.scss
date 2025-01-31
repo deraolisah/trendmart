@@ -20,9 +20,11 @@
     gap: 10.8px;
     // background: red;
 
+
     @media (max-width: 900px) {
       display: none;      
     }
+
 
     a{
       cursor: pointer;
@@ -30,6 +32,7 @@
       // background: red;
       display: flex;
       align-items: center;
+
 
       &:hover{
         opacity: 0.8;
@@ -48,6 +51,7 @@
       &:hover{
         opacity: 0.8;
         text-decoration: none;
+
       }
     }
 

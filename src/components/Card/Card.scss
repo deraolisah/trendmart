@@ -1,0 +1,216 @@
+.card{
+  border: 0.8px solid #dde;
+  border-radius: 6.8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  // cursor: pointer;
+  
+  @media (max-width: 900px) {
+  //   // width: calc(33% - 20px);
+    padding: 10px;
+  }
+
+  // @media (max-width: 600px) {
+  //   width: calc(50% - 10px);
+  // }
+
+  &:hover {
+    border-color: #bbb;
+      // transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+      .card-options{
+        opacity: 1;
+        visibility: visible;
+      }
+      @media (max-width: 600px) {
+        box-shadow: none;
+      }
+  }
+
+
+  .card-options{
+    // background-color: rgba(160, 0, 246, 0.6);
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 28px);
+    height: 180px;
+    border-radius: 5px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+
+
+    @media (max-width: 600px) {
+      position: relative;
+      opacity: 1;
+      visibility: visible;
+      width: 100% !important;
+      height: auto;
+      flex-direction: column;
+      gap: 2px;
+      padding: 0;
+      background-color: transparent;
+    }
+
+    
+    .option{
+      color: var(--primary-color);
+      display: flex;
+      gap: 10px;
+
+      @media (max-width: 600px) {
+        display: none;
+        min-width: 100% !important;
+        flex-direction: column;
+        border-radius: 0;
+      }
+
+      &.option-2{
+        color: white;
+        background-color: var(--primary-color);
+        display: none;
+
+        @media (max-width: 600px) {
+          padding: 0;
+          background-color: transparent;
+          color: var(--primary-color);
+          display: flex;
+        }
+        
+        .cta{
+          font-size: 1rem !important;
+          min-width: 100% !important;
+          display: flex;
+          margin: 0;
+          // background: red !important;
+        }
+  
+  
+  
+        @media (max-width: 600px) {
+          display: flex;
+        }
+      }
+
+      .icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.68rem;
+        background-color: white;
+        padding: 10px;
+
+        &:hover{
+          color: white;
+          background-color: var(--primary-color);
+        }
+      }
+
+
+      
+      
+    }
+
+  }
+
+  .product-image {
+    height: 180px;
+    border-radius: 5px;
+  }
+
+  .product-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.8px;
+    width: 100%;
+    
+    .stars{
+      margin-top: 6px;
+
+      .star{
+        color: var(--stars-color);
+      }
+    }
+    .product-name{
+      color: #1B1818;
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: var(--poppins);
+      text-align: left;
+      margin-bottom: 6px;
+      line-height: 2.2rem;
+
+      @media (max-width: 600px) {
+        font-size: 1.28rem;
+        line-height: 2rem;
+        margin-bottom: 0px;
+      }
+    }
+      
+    .prices{
+      display: flex;
+      gap: 8px;
+
+      .product-old-price{
+        text-decoration: 1px solid gray line-through;
+      }
+
+      .product-price{
+        font-size: 1.4rem;
+        font-weight: 500;
+        // font-family: var(--poppins);
+        color: var(--primary-color);
+        
+        @media (max-width) {
+          font-size: 1.28rem;
+        }
+      }
+    }
+  }
+    
+  .out-of-stock-label,
+  .discount-label,
+  .hot-label {
+      position: absolute;
+      z-index: 10;
+      top: 10px;
+      right: 10px;
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: white;
+  }
+
+  .out-of-stock-label {
+    left: 10px;
+    width: fit-content;
+    background-color: #ccc;
+    background-color: #e74c3c;
+  }
+
+  .discount-label {
+      background-color: black;
+  }
+
+  .hot-label {
+      background-color: #f39c12;
+  }
+}

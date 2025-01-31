@@ -1,7 +1,11 @@
 .carousel {
   color: white;
   width: 100%;
+<<<<<<< HEAD
   height: 380px;
+=======
+  height: 400px;
+>>>>>>> origin/main
   background-color: #FFFFFF;
   overflow: hidden;
   position: relative;
@@ -29,6 +33,7 @@
 
   /* Custom Pagination Dots */
 .flickity-page-dots {
+<<<<<<< HEAD
   bottom: 20px; /* Adjust position as needed */
   display: flex !important;
   align-items: center;
@@ -38,12 +43,25 @@
 
   .dot{
     height: 30% !important;
+=======
+  bottom: 25px; /* Adjust position as needed */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+
+  .dot{
+>>>>>>> origin/main
     width: 100px !important;
 
     &.is-selected {
       background: #007bff;
+<<<<<<< HEAD
       background: yellow !important;
       background-color: var(--primary-color) !important;
+=======
+      // background: yellow !important;
+>>>>>>> origin/main
     }
 
     &:hover {

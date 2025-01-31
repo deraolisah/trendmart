@@ -17,6 +17,7 @@ const CategoryFilter = () => {
   return (
     <div className="category-filter">
       <h3> Category </h3>
+
       <form>
         {categories.map((category) => (
           <div key={category} className="category-option">

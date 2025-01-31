@@ -1,18 +1,26 @@
+<<<<<<< HEAD
 @import "../../styles/variables";
 
+=======
+>>>>>>> origin/main
 .footer{
   width: 100%;
   min-height: 200px;
   color: #FFFFFF;
   background-color: black;
 
+<<<<<<< HEAD
   // padding: 68px 40px 20px;
   // padding: 0px 40px 20px;
+=======
+  padding: 68px 40px 20px;
+>>>>>>> origin/main
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+<<<<<<< HEAD
   // gap: 48px;
 
   
@@ -146,6 +154,12 @@
         }
       }
     }
+=======
+  gap: 48px;
+
+  @media (max-width: 600px) {
+    padding: 48px 4.5% 20px;
+>>>>>>> origin/main
   }
   
   
@@ -156,13 +170,19 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 24px;
+<<<<<<< HEAD
     padding: 68px 40px 20px;
+=======
+>>>>>>> origin/main
     
     @media (max-width: 900px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 28px;
+<<<<<<< HEAD
       padding-inline: 4.5%;
+=======
+>>>>>>> origin/main
     }
     @media (max-width: 600px) {
       flex-wrap: wrap;
@@ -181,8 +201,12 @@
 
       .footer-logo{
         font-size: 3.2rem;
+<<<<<<< HEAD
         // font-family: var(--flavor-font);
         font-family: $flavor-font;
+=======
+        font-family: var(--flavor-font);
+>>>>>>> origin/main
         margin-bottom: 4px;
       }
 
@@ -200,6 +224,7 @@
 
 
         a{
+<<<<<<< HEAD
           text-decoration: none;
 
           &:hover{
@@ -211,12 +236,46 @@
       }
 
 
+=======
+          text-decoration: underline;
+
+          &:hover{
+            color: gray;
+            opacity: 0.8;
+          }
+        }       
+        
+        .social-icons{
+          margin-right: 10px;
+          font-size: 1.8rem;
+        }
+      }
+>>>>>>> origin/main
       a{
         font-size: 1.4rem;
       }
 
 
+<<<<<<< HEAD
       
+=======
+      .apps{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 18px;
+
+        img{
+          width: 50%;
+          cursor: pointer;
+
+          @media (max-width: 600px) {
+            // width: 60%;
+          }
+        }
+      }
+>>>>>>> origin/main
 
       form{
         width: 100%;
@@ -228,6 +287,7 @@
         input{
           width: 100%;
           min-height: 40px;
+<<<<<<< HEAD
           border-radius: 8px;
           padding: 8px 16.8px;
           color: var(--dark-text);
@@ -237,6 +297,12 @@
           &:focus{
             border: 1px solid var(--primary-color) !important;
           }
+=======
+          border-radius: 50px;
+          padding: 10px 20px;
+          // background-color: lightgray;
+
+>>>>>>> origin/main
           @media (max-width: 600px) {
             border-radius: 8px !important;
           }
@@ -248,7 +314,10 @@
   .copyrights{
     text-align: center;
     line-height: 4rem;
+<<<<<<< HEAD
     margin-block: 1rem;
     // background: red;
+=======
+>>>>>>> origin/main
   }
 }

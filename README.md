@@ -12,7 +12,11 @@ A Scalable Single-Seller E-commerce Platform showcasing products and checkout ex
 
 ### Demo
 > Currently available to preview: 
+<<<<<<< HEAD
 - https://trendmartng.netlify.app/
+=======
+- https://trendmart-store.netlify.app/
+>>>>>>> origin/main
  
 
 ### Getting Started
@@ -37,5 +41,9 @@ A Scalable Single-Seller E-commerce Platform showcasing products and checkout ex
 * Fully Functional Checkout Experience. ✅
 * Fully Functional Product Listing Page. ✅
 * Fully Functional Product Details Page (Pending).
+<<<<<<< HEAD
 * Fully Functional Product Search Page (Pending).
 * Fully Functional Admin Dashboard (Pending).
+=======
+* Fully Functional Product Search Page (Pending).
+>>>>>>> origin/main

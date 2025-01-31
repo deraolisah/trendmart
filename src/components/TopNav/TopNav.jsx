@@ -10,6 +10,7 @@ import { BsTelephone } from "react-icons/bs";
 import "./TopNav.scss";
 import { Link } from 'react-router-dom';
 
+
 const TopNav = () => {
   return (
     <div className='topnav'>
@@ -28,6 +29,7 @@ const TopNav = () => {
         <Link to="/support">
           <p><BsHeadset /> Customer Support </p>
         </Link>
+
         <p><PiWarningCircleBold /> Need Help ? </p>
       </div>
 

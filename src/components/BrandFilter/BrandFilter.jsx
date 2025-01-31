@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './BrandFilter.scss'
 
+
 const brands = [
   "Dior",
   "Fendi",
@@ -28,16 +29,20 @@ const BrandFilter = () => {
 
   return (
     <div className="brand-filter">
+
       <h3>Popular Brands</h3>
+
       <form>
         {brands.map((brand) => (
           <div key={brand} className="brand-option">
             <input
+
               type="checkbox"
               id={brand}
               name="brand"
               value={brand}
               checked={selectedBrands.includes(brand)} // Check if brand is in the array
+
               onChange={handleBrandChange}
               className="custom-radio"
             />
