@@ -19,7 +19,7 @@ const Nav = () => {
       <Link className="logo" to="/"> TrendMart </Link>
 
       <input type="checkbox" id="menuBtn" />
-      <label htmlFor="menuBtn">
+      <label htmlFor="menuBtn" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>

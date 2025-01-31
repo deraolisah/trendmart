@@ -132,7 +132,7 @@ const Cart = () => {
                     style={{
                       backgroundColor: "transparent",
                       border: "1px solid var(--primary-color)",
-                      color: "var (--primary-color)",
+                      color: "var(--primary-color)",
                     }}
                   />
                 </Link>

@@ -73,7 +73,7 @@
       background: white;
       display: flex;
       align-items: flex-end;
-      gap: 8px;
+      gap: 10px;
       position: relative;
       border-radius: 0px 10px 0px 0px;
       height: 38px;
@@ -126,6 +126,11 @@
 
         span{
           display: none;
+        }
+
+        &.disabled{
+          color: gray !important;
+          background-color: #ccc !important;
         }
       } 
 
