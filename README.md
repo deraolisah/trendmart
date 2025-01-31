@@ -38,3 +38,4 @@ A Scalable Single-Seller E-commerce Platform showcasing products and checkout ex
 * Fully Functional Product Listing Page. ✅
 * Fully Functional Product Details Page (Pending).
 * Fully Functional Product Search Page (Pending).
+* Fully Functional Admin Dashboard (Pending).
