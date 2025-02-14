@@ -1,32 +1,63 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext';
+import { Navigate, useNavigate, Link } from 'react-router-dom';
 import "./Login.scss";
-import CTA from '../../components/CTA/CTA';
+import { useShopContext } from '../../context/ShopContext';
+import  { doSignInWithEmailAndPassword, doSignInWithGoogle } from "../../firebase/auth";
+
 
 const Login = () => {
+
+  const { userLoggedIn } = useShopContext();
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isSigningIn, setIsSigningIn] = useState('');
   const [error, setError] = useState('');
-  const { login } = useAuth();
+  // const { login } = useShopContext();
+
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
+    
+    if(!isSigningIn){
+      setIsSigningIn(true);
       setError('');
-      await login(email, password);
-      navigate('/dashboard'); // Redirect after successful login
-    } catch (err) {
+      await doSignInWithEmailAndPassword(email, password);
+    } else{
+      setIsSigningIn(false)
       setError('Failed to log in');
-      console.error(err);
     }
-  };
+      
+      
+    // try {
+    //   setError('');
+    //   await login(email, password);
+    //   navigate('/dashboard'); // Redirect after successful login
+    // } catch (err) {
+        // setError('Failed to log in');
+        // console.error(err);
+    // }
+  }
+  
+
+
+  const onGoogleSignIn = (e) => {
+    e.preventDefault()
+
+    if(!isSigningIn){
+      setIsSigningIn(true);
+      doSignInWithGoogle().catch(err => {
+        setIsSigningIn(false)
+      });
+    }
+  }
 
   return (
     <div className='login-box'>
       <h2>Login</h2>
-      {error && <p>{error}</p>}
+      {/* {error && <p>{error}</p>} */}
+      {userLoggedIn && (<Navigate to={'/'} replace={true} />)}
       <form onSubmit={handleSubmit}>
         <input
           type="email"
@@ -47,7 +78,8 @@ const Login = () => {
           Login
         </button>
         <span>
-          Already Have an account? Sign In
+          Already Have an account? 
+          <Link to={'/register'}> Sign In </Link>
         </span>
       </form>
     </div>

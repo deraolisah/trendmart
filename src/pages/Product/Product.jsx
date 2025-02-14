@@ -4,31 +4,31 @@ import { useParams, Link } from 'react-router-dom';
 import { FaStar } from "react-icons/fa";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import { MdFavoriteBorder } from "react-icons/md";
+import { useShopContext } from "../../context/ShopContext"; // Import the getProductById function
 import "./Product.scss";
 
 const Product = () => {
+
+  const { getProductById, addProductToCart, removeProductFromCart } = useShopContext();
+
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
   const [selectedImg, setSelectedImg] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [inWishlist, setInWishlist] = useState(false);
-  const [error, setError] = useState(null); // State for error handling
-  const [loading, setLoading] = useState(true); // State for loading
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/products/${productId}`);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
+        const data = await getProductById(productId);
         setProduct(data);
       } catch (error) {
         console.error("Error fetching product data:", error);
         setError("Failed to load product data. Please try again later.");
       } finally {
-        setLoading(false); // Set loading to false after fetching
+        setLoading(false);
       }
     };
 
@@ -36,11 +36,11 @@ const Product = () => {
   }, [productId]);
 
   if (loading) {
-    return <div>Loading...</div>; // Consider using a spinner here
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return <div>{error}</div>; // Display error message to the user
+    return <div>{error}</div>;
   }
 
   const handleWishlistClick = () => {
@@ -52,10 +52,10 @@ const Product = () => {
       <nav className="breadcrumb">
         <Link to="/">Home</Link>
         <span> » </span>
-        <Link to={`/product/${product.id}`}>Product</Link>
+        {product && <Link to={`/product/${product.id}`}>Product</Link>}
       </nav>
 
-      <div className='product-content'>
+      <div className="product-content">
         <div className="image-gallery">
           <div className="main-image">
             <img src={product.images[selectedImg]} alt={product.title} />

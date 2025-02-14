@@ -4,10 +4,10 @@ import { HiOutlineTrash } from "react-icons/hi";
 import CTA from "../../components/CTA/CTA";
 import QuantityControl from "../../components/QuantityControl/QuantityControl";
 import { Link } from "react-router-dom";
-import { useCart } from "../../context/CartContext"; // Import the useCart hook
+import { useShopContext } from "../../context/ShopContext";
 
 const Cart = () => {
-  const { cart, removeFromCart, updateQuantity } = useCart(); // Get cart, removeFromCart, and updateQuantity from context
+  const { cart, removeFromCart, updateQuantity } = useShopContext(); // Get cart, removeFromCart, and updateQuantity from context
 
   // Calculate totals
   const subtotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
@@ -58,16 +58,16 @@ const Cart = () => {
             </div>
 
             {cart.map((item) => (
-              <div key={item.id} className="cart-item">
+              <div key={item._id} className="cart-item"> {/* Changed item.id to item._id */}
                 <div className="cart-details">
                   <div className="left">
                     <HiOutlineTrash 
                       className="delete" 
-                      onClick={() => removeFromCart(item.id)} 
+                      onClick={() => removeFromCart(item._id)} 
                       aria-label={`Remove ${item.name} from cart`}
                     />
                     <img src={item.imageUrl} alt={item.name} />
-                    <h4>{item.name}</h4>
+                    <h4>{item.title}</h4>
                   </div>
                   <div className="right">
                     <div className="price col">
@@ -79,7 +79,8 @@ const Cart = () => {
                       <QuantityControl 
                         initialQuantity={item.quantity} 
                         maxQuantity={item.stock} 
-                        onChange={(quantity) => handleQuantityChange(item.id, quantity)} 
+                        onChange={(quantity) => handleQuantityChange(item._id, quantity)}  
+                        
                       />
                     </div>
                     <h4 className="col">

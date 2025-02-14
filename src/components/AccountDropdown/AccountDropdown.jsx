@@ -6,7 +6,7 @@ import { MdLocationPin } from "react-icons/md";
 import { BsHeadset } from "react-icons/bs";
 import { PiWarningCircleBold } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../../context/AuthContext'; // Import useAuth
+import { useShopContext } from '../../context/ShopContext'; // Import useAuth
 import './AccountDropdown.scss';
 
 const AccountDropdown = () => {
@@ -15,7 +15,7 @@ const AccountDropdown = () => {
   const navigate = useNavigate();
   
   // Use the AuthContext
-  const { currentUser, logout } = useAuth();
+  const { currentUser, logout } = useShopContext();
 
 
   // Function to handle click outside dropdown

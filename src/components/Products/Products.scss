@@ -78,12 +78,14 @@
             transform: translateY(-50%);
             z-index: 2;
             cursor: pointer;
+            font-size: 1.68rem;
+            color: var(--primary-color);
             // background: blue;
           }
         }
         input[type="search"]{
           border-radius: 8px;
-          padding: 0 15px 0 32px;
+          padding: 0 15px 0 34px;
           border: 1px solid var(--light-gray);
           width: 100%;
           height: 100%;
@@ -96,7 +98,8 @@
           }
           &::placeholder{
             color: var(--light-text);
-            font-weight: 300;
+            // color: var(--primary-color);
+            font-weight: 400;
           }
 
         }

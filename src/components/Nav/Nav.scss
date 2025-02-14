@@ -122,15 +122,17 @@
 
       .icon{
         position: relative;
+        color: var(--primary-color);
 
         span{
           pointer-events: none;
-          font-size: 0.88rem;
+          font-size: 0.68rem;
           font-weight: 400;
+          font-family: sans-serif;
 
-          width: 20px;
+          width: 18px;
           border-radius: 50%;
-          height: 20px;
+          height: 18px;
           background-color: #2879fe;
           background-color: #F84F31;
 

@@ -3,11 +3,12 @@ import "./Favorites.scss";
 import CTA from '../../components/CTA/CTA';
 import favoriteImg from "/favorite.png";
 import { Link, useNavigate } from 'react-router-dom';
-import { useWishlist } from '../../context/WishlistContext';
+// import { useWishlist } from '../../context/WishlistContext';
 import { MdDelete } from 'react-icons/md';
+import { useShopContext } from '../../context/ShopContext';
 
 const Favorites = () => {
-  const { wishlist, removeFromWishlist } = useWishlist();
+  const { wishlist, removeFromWishlist } = useShopContext();
   const navigate = useNavigate();
 
   const handleProductClick = (productId) => {
@@ -58,7 +59,7 @@ const Favorites = () => {
               </div>
               
               <div className='wishlist-item-details'>
-                <h4>{item.name}</h4>
+                <h4>{item.title}</h4>
                 <div className='wishlist-item-pricing'>
                   {item.oldPrice && (
                     <span className='old-price'>${item.oldPrice.toFixed(2)}</span>

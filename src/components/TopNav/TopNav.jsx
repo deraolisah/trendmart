@@ -34,7 +34,7 @@ const TopNav = () => {
       </div>
 
       <div className='right'>
-        <p><a href="tel:+234815377444"><BsTelephone /> +234 815 377 444 </a></p>
+        <p><a href="tel:+2348123456789"><BsTelephone /> +234 812-3456-789 </a></p>
       </div>
     </div>
   )

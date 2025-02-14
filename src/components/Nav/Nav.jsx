@@ -4,14 +4,13 @@ import "./Nav.scss";
 import { MdFavoriteBorder } from "react-icons/md";
 import { PiShoppingCartSimple } from "react-icons/pi";
 import AccountDropdown from "../AccountDropdown/AccountDropdown";
-import { useCart } from "../../context/CartContext";
 import { useWishlist } from "../../context/WishlistContext";
+import { useShopContext } from "../../context/ShopContext";
 
 
 const Nav = () => {
 
-  const { cart } = useCart();
-  const { wishlist } = useWishlist();
+  const { cart, wishlist } = useShopContext();
   
 
   
@@ -38,7 +37,6 @@ const Nav = () => {
           <Link to="/cart" className="nav-icons icon">
             <PiShoppingCartSimple />
             {cart.length > 0 && <span className="cart-value">{cart.length}</span>} {/* Show count if > 0 */}
-
           </Link>
           <div className="user-name">
             <AccountDropdown />
